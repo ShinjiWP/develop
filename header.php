@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="img.ico" href="../img/favicon.ico" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.min.css" />
   <script src="../javascript/jquery-3.6.0.min.js"></script>
   <script src="../javascript/js-slide.js"></script>
+  <?php wp_head();?>
 </head>
 
 <body>

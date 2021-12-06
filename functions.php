@@ -12,3 +12,10 @@ function  develop_title($title){
   }
   return $title;
 }add_filter('pre_get_document_title','develop_title');
+
+
+
+function add_stylesheet(){
+  wp_enqueue_style('style',get_template_directory_uri().'/style.css',array());
+  wp_enqueue_style('style',get_template_directory_uri().'/css/style.css',array());
+} add_action ('wp_enqueue_style','add_stylesheet');

@@ -8,6 +8,7 @@
 </div>
 <script src="../javascript/jquery-3.6.0.min.js"></script>
 <script src="../javascript/js-slide.js"></script>
+<?php wp_footer();?>
 </body>
 
 </html>
