@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+.p-code__box {
+	font-size: g.$sp-code-text;
+
+	@include g.tab {
+		font-size: g.$tab-code-text;
+	}
+  
+	@include g.pc {
+		font-size: g.$pc-code-text;
+	}
+}

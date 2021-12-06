@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+.p-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 100%;
+	background-color: g.$bgc-header;
+	justify-content: center;
+	align-items: flex-end;
+
+	@include g.pc {
+		flex-direction: row;
+	}
+
+	&__btn {
+		width: fit-content;
+		padding:2vw;
+		font-family: g.$Roboto;
+		color: g.$font-gray;
+		font-size: g.$sp-header-slide-btn;
+		font-weight: 700;
+
+		@include g.tab {
+			font-size: g.$tab-header-slide-btn;
+		}
+		@include g.pc {
+			font-size: g.$pc-header-slide-btn;
+		}
+	}
+
+	&__heading {
+		width: 100%;
+		font-family: g.$Roboto;
+		font-size: g.$header-ttl;
+		a{
+			color: g.$font-gray;
+			text-decoration: none;
+		}
+
+		@include g.tab {
+			// font-size: g.$tab-header-ttl;
+		}
+		@include g.pc {
+			// font-size: g.$pc-header-ttl;
+			margin: auto;
+			text-align: left;
+			margin-left: 20px;
+		}
+	}
+}

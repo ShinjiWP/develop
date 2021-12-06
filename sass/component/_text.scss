@@ -1,0 +1,7 @@
+@use "../global" as g;
+
+.c-text {
+	font-size: g.$text-font-size;
+	line-height: 1.4;
+	overflow: hidden;
+}

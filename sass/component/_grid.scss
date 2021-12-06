@@ -1,0 +1,84 @@
+@use "../global" as g;
+
+.c-grid {
+	overflow-x: hidden;
+	display: grid;
+	grid-template:
+		"header sidebar" 217px
+		"figure   sidebar" auto
+		"main    sidebar" auto
+		"access  sidebar" auto
+		"page    sidebar" auto
+		"footer   sidebar" 150px
+		/100% 100%;
+
+	@include g.pc {
+		overflow-x: visible;
+		grid-template:
+			"header  sidebar" 12vw
+			"figure   sidebar" auto
+			"main    sidebar" auto
+			"access  sidebar" auto
+			"page    sidebar" auto
+			"footer   footer" 150px
+			/80% 20%;
+	}
+
+	&--header {
+		grid-area: header;
+	}
+
+	&--mainvisual {
+		grid-area: figure;
+		margin: 0;
+	}
+
+	&--contents {
+		grid-area: main;
+		padding: 8%;
+
+		@include g.tab {
+			display: flex;
+			padding: 8% 6%;
+		}
+
+		@include g.pc {
+			padding: 10% 6%;
+		}
+	}
+	&--archive {
+		grid-area: main;
+		padding: 8%;
+
+		@include g.tab {
+			padding: 8% 6%;
+		}
+
+		@include g.pc {
+			padding: 4% 6%;
+		}
+	}
+	&--main{
+		@extend .c-grid--archive
+	}
+
+	&--sidebar {
+		grid-area: sidebar;
+		width: 100%;
+		height: 100%;
+		background-color: g.$light-beige;
+	}
+
+	&--access {
+		grid-area: access;
+	}
+
+	&--pager{
+		grid-area: page;
+	}
+
+	&--footer {
+		grid-area: footer;
+		background-color: g.$brown;
+	}
+}

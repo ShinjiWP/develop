@@ -20,10 +20,8 @@
     <header class="c-grid--header">
       <div class="p-grid-header p-header">
         <div class="c-text p-header__btn js-slidebar">Menu</div>
-        <h1 class="c-text p-header__heading">Hamburger</h1>
-        <form class="p-search">
-          <input type="search" name="search" class="c-input p-search__input" />
-          <button type="submit" class="c-btn  p-search__btn">検索</button>
-        </form>
+        <h1 class="c-text p-header__heading"><a href="<?php echo esc_url( home_url('/'));?>">
+            <?php bloginfo('name');?></a></h1>
+        <?php get_search_form();?>
       </div>
     </header>

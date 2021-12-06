@@ -723,8 +723,11 @@ dl, dd {
 .p-header__heading {
   width: 100%;
   font-family: "Roboto", sans-serif;
-  color: #707070;
   font-size: clamp(16px, (1rem + 5vw), 50px);
+}
+.p-header__heading a {
+  color: #707070;
+  text-decoration: none;
 }
 @media screen and (min-width: 1080px) {
   .p-header__heading {

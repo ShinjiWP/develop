@@ -1,0 +1,70 @@
+@use "../global" as g;
+
+/*mainvisualのグリッド配置*/
+.p-grid--mainvisual {
+	display: grid;
+	grid-template: "image" auto/auto;
+}
+.p-mainvisual--image {
+	grid-area: image;
+}
+
+.p-mainvisual--inner {
+	grid-area: image;
+}
+
+/*articleのグリッド配置*/
+
+.p-grid--article {
+	display: grid;
+	grid-template: "article" auto/auto;
+}
+
+.p-content__image {
+	grid-area: article;
+	// display: block;
+}
+.p-content__heading {
+	grid-area: article;
+	// display: block;
+}
+.p-content__box {
+	grid-area: article;
+	// display: block;
+}
+
+/*accessのグリッド配置*/
+.p-grid--access {
+	display: grid;
+	grid-template:
+		"access" auto
+		/ auto;
+}
+.p-access__map--sp {
+	grid-area: access;
+}
+.p-access__map--tab {
+	grid-area: access;
+}
+.p-access__map--pc {
+	grid-area: access;
+}
+.p-access__background {
+	grid-area: access;
+}
+.p-access__inner {
+	grid-area: access;
+}
+
+.p-grid--sidebar {
+	display: grid;
+	grid-template: "sidebar" auto/auto;
+	position: relative;
+}
+
+.c-shadow {
+	grid-area: sidebar;
+}
+.p-sidebar {
+	grid-area: sidebar;
+}

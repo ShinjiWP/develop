@@ -1,0 +1,142 @@
+@use "../global" as g;
+
+.p-single {
+	margin: 0;
+	margin-top: 5vw;
+	&__description {
+		height: 25vw;
+		overflow: hidden;
+		font-size: g.$sp-single-text;
+		@include g.tab {
+			height: 14vw;
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			height: 4vw;
+			font-size: g.$pc-single-text;
+			margin-bottom: 70px;
+		}
+	}
+
+	&--blockquote {
+		font-size: g.$sp-single-text;
+		@include g.tab {
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			font-size: g.$pc-single-text;
+		}
+	}
+
+	&--description {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding-top: 5vw;
+	}
+
+	&__figure {
+		width: 45%;
+		height: fit-content;
+	}
+
+	&__figcaption {
+		width: 43vw;
+		height: 37vw;
+		font-size: g.$sp-single-text;
+		@include g.tab {
+			height: 36vw;
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			width: 36vw;
+			height: 11vw;
+			font-size: g.$pc-single-text;
+		}
+	}
+
+	&--top-image {
+		display: flex;
+		justify-content: center;
+		margin: 5vw 0;
+	}
+
+	&__image {
+		width: 80%;
+		@include g.pc {
+			width: 50%;
+		}
+	}
+
+	&--items {
+		@include g.tab {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-top: 30vw;
+			@include g.pc {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__item {
+		padding-bottom: 5vw;
+		@include g.tab {
+			width: 49%;
+			padding-bottom: 1.5vw;
+			@include g.pc {
+				width: 32%;
+			}
+		}
+	}
+
+	&--list {
+		margin: 10vw 0;
+		font-size: g.$sp-single-list;
+
+		@include g.tab {
+			margin: 5vw 0;
+			font-size: g.$tab-single-list;
+		}
+
+		@include g.pc {
+			margin: 3vw 0;
+			font-size: g.$pc-single-list;
+		}
+
+		&-decimal li {
+			list-style-type: decimal;
+			list-style-position: inside;
+		}
+		&-none li {
+			list-style-type: none;
+		}
+	}
+
+	&--code {
+		margin: 5vw 0;
+		padding: 0 5vw;
+	}
+
+	&--button {
+		padding: 5vw 0;
+	}
+	&__btn {
+		height: 100px;
+		border-radius: 15px;
+		width: 100%;
+
+		@include g.tab {
+			width: 70%;
+		}
+		@include g.pc {
+			width: 35%;
+		}
+	}
+
+	&--bolder {
+		display: block;
+		margin-bottom: 40vw;
+	}
+}

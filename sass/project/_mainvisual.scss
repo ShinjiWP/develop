@@ -1,0 +1,73 @@
+@use "../global" as g;
+
+.p-mainvisual {
+	&--image {
+		&--sp {
+			display: block;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--tab {
+			display: none;
+
+			@include g.tab {
+				display: block;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--pc {
+			display: none;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: block;
+			}
+		}
+	}
+
+	&--inner {
+		padding: 5%;
+		display: flex;
+		align-items: center;
+		font-family: g.$Roboto;
+		color: g.$font-white;
+		@include g.tab {
+			padding: 5% 10%;
+		}
+		@include g.pc {
+			padding: 5%;
+		}
+	}
+
+	&--ttl {
+		font-size: g.$sp-mainvisual-ttl;
+
+		@include g.tab {
+			font-size: g.$tab-mainvisual-ttl;
+		}
+		@include g.pc {
+			font-size: g.$pc-mainvisual-ttl;
+		}
+	}
+	&--text {
+		font-size: g.$sp-mainvisual-text;
+
+		@include g.tab {
+			font-size: g.$tab-mainvisual-text;
+		}
+		@include g.pc {
+			font-size: g.$pc-mainvisual-text;
+		}
+	}
+}

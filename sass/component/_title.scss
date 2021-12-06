@@ -1,0 +1,5 @@
+@use "../global" as g;
+
+.c-title {
+	font-size: g.$title-font-size;
+}

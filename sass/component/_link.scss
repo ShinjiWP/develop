@@ -1,0 +1,7 @@
+@use '../global'as g;
+
+.c-link{
+  text-decoration: underline;
+}
+@include g.tab{}
+@include g.pc{}

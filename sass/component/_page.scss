@@ -1,0 +1,12 @@
+@use "../global" as g;
+
+.c-page {
+	@include g.tab {
+    padding: 1vw 1.5vw;
+    border: 1px solid;
+    text-decoration: none;
+    @include g.pc {
+      padding: 0.5vw 0.8vw;
+    }
+	}
+}

@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+.c-btn {
+	font-family: g.$Roboto;
+	color: g.$font-gray;
+	font-weight: 700;
+	border-radius: 10px;
+	background: linear-gradient(g.$bgc-btn-start, g.$bgc-btn-finish);
+	border: 1px solid g.$font-gray;
+}

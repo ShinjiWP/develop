@@ -1,0 +1,16 @@
+@use '../global'as g;
+
+.u-margin--text{
+  margin-top: 1vw;
+
+  @include g.tab{
+    margin-left: 1.5vw;
+  }
+  @include g.pc{
+    margin-top: 0.5vw;
+  }
+}
+
+.u-margin--footer{
+  margin-right: 10px;
+}

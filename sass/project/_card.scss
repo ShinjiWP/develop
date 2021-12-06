@@ -1,0 +1,137 @@
+@use "../global" as g;
+
+.p-card {
+	margin: 20px 0;
+	@include g.tab {
+		display: flex;
+	}
+	@include g.pc {
+	}
+
+	&__image {
+		&--sp {
+			display: block;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--tab {
+			display: none;
+
+			@include g.tab {
+				display: block;
+				width: 50%;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--pc {
+			display: none;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: block;
+				width: 50%;
+			}
+		}
+	}
+
+	&__caption {
+		padding: 10% 5% 2%;
+		height: 80vw;
+		background-color: g.$bgc-card;
+		color: g.$font-white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include g.tab {
+			padding: 5%;
+			height: 40.5vw;
+		}
+		@include g.pc {
+			padding: 4%;
+			height: 25.5vw;
+		}
+	}
+
+	&__box {
+		&__ttl {
+			font-weight: 700;
+			font-size: g.$sp-card-ttl;
+			margin-bottom: 24px;
+
+			@include g.tab {
+				font-size: g.$tab-card-ttl;
+			}
+
+			@include g.pc {
+				font-size: g.$pc-card-ttl;
+			}
+		}
+
+		&__subtitle {
+			font-weight: 700;
+			font-size: g.$sp-card-subtitle;
+			margin-bottom: 10px;
+
+			@include g.tab {
+				font-size: g.$tab-card-subtitle;
+			}
+			@include g.pc {
+				font-size: g.$pc-card-subtitle;
+			}
+		}
+		&__text {
+			height: 20vw;
+			overflow: hidden;
+			font-size: g.$sp-card-text;
+
+			@include g.tab {
+				height: 14vw;
+				margin-bottom: 3vw;
+				font-size: g.$tab-card-text;
+			}
+			@include g.pc {
+        height: 5vw;
+				font-size: g.$pc-card-text;
+        line-height: 1.8;
+			}
+		}
+	}
+	&--btn {
+		margin: auto;
+		font-size: g.$sp-card-btn;
+
+		@include g.tab {
+			font-size: g.$tab-card-btn;
+		}
+		@include g.pc {
+			font-size: g.$pc-card-btn;
+		}
+	}
+
+	&__btn {
+		width: 34vw;
+		height: 10vw;
+		border-radius: 25px;
+		font-weight: 700;
+		color: g.$font-gray;
+		@include g.tab {
+			width: 20vw;
+			height: 5vw;
+		}
+		@include g.pc {
+      width:15vw;
+			height: 4vw;
+		}
+	}
+}

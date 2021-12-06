@@ -1,0 +1,90 @@
+@use "../global" as g;
+
+.p-content {
+	&__image{
+		width: 100%;
+	}
+	
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	&__heading {
+		padding: 5%;
+		position: relative;
+		font-family: g.$Roboto;
+		color: g.$font-white;
+		font-size: g.$sp-content-heading;
+
+		@include g.tab {
+			font-size: g.$tab-content-heading;
+		}
+		@include g.pc {
+			font-size: g.$pc-content-heading;
+		}
+
+		&::before {
+			display: inline-block;
+			content: "";
+			width: 9vw;
+			height: 3px;
+			background: #fff;
+			position: absolute;
+			left: 5%;
+			top: 13%;
+
+			@include g.tab {
+				width: 4.5vw;
+			}
+			@include g.pc {
+				height: 3px;
+			}
+		}
+	}
+
+	&__inner {
+		padding: 5%;
+		height: 35vw;
+		@include g.tab {
+			height: 25vw;
+		}
+		@include g.pc {
+			height: 11vw;
+			padding: 3%;
+		}
+
+		&__ttl {
+			margin-bottom: 3%;
+			font-size: g.$sp-content-ttl;
+			font-weight: 700;
+
+			@include g.tab {
+				font-size: g.$tab-content-ttl;
+			}
+
+			@include g.pc {
+				font-size: g.$pc-content-ttl;
+			}
+		}
+
+		&__text {
+			height: 20vw;
+			width: 100%;
+			display: inline-block;
+			overflow: hidden;
+			line-height: 1.4;
+			font-size: g.$sp-content-text;
+			@include g.tab {
+				font-size: g.$tab-content-text;
+				height: 13vw;
+			}
+
+			@include g.pc {
+				font-size: g.$pc-content-text;
+				height: 7vw;
+			}
+		}
+	}
+}

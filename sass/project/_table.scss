@@ -1,0 +1,23 @@
+@use "../global" as g;
+
+.p-table {
+	width: 100%;
+	border-collapse: collapse;
+
+  &__row{
+    height: 75px;
+  }
+
+  &__columnA{
+    width: 35%;
+    padding-left: 5vw;
+  }
+  &__columnB{
+    padding-left: 5vw;
+  }
+}
+
+@include g.tab {
+}
+@include g.pc {
+}

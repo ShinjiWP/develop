@@ -1,0 +1,109 @@
+@use "../global" as g;
+
+.p-sidebar {
+	width: 86%;
+	background-color: g.$light-beige;
+	height: 100%;
+	padding: 20% 15%;
+	position: absolute;
+	right: 0%;
+	z-index: 200;
+
+	@include g.tab {
+		width: 43%;
+		padding: 10% 5%;
+	}
+	@include g.pc {
+		width: 100%;
+		padding: 10%;
+	}
+
+	&__esc {
+		display: block;
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		top: 20px;
+		right: 20px;
+
+		@include g.pc {
+			display: none;
+		}
+	}
+
+	&__esc::before,
+	&__esc::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 5px;
+		height: 30px;
+		background: rgb(97, 97, 97);
+	}
+
+	&__esc::before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	&__esc::after {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
+	&__menu {
+		position: relative;
+		padding: 10% 5%;
+		z-index: 100;
+		@include g.tab {
+			padding: 5% 2.5%;
+		}
+		@include g.pc {
+			padding: 5% 2.5%;
+		}
+
+		&__item {
+			color: g.$font-gray;
+			margin: 10% 0;
+			font-size: g.$sp-sidebar-item;
+
+			@include g.tab {
+				margin: 5% 0;
+				font-size: g.$tab-sidebar-item;
+			}
+			@include g.pc {
+				margin: 12% 2%;
+				font-size: g.$pc-sidebar-item;
+			}
+		}
+	}
+
+	&__heading {
+		&--main {
+			font-family: g.$Roboto;
+			color: g.$font-gray;
+			visibility: hidden;
+
+			@include g.pc {
+				visibility: visible;
+				margin: 15% 0 30% 0;
+				font-size: g.$pc-sidebar-main;
+			}
+		}
+		&--secondary {
+			color: g.$font-gray;
+			font-size: g.$sp-sidebar-secondary;
+
+			@include g.tab {
+				font-size: g.$tab-sidebar-secondary;
+			}
+			@include g.pc {
+				font-size: g.$pc-sidebar-secondary;
+			}
+		}
+	}
+
+	@include g.pc {
+		&--shadow {
+			display: none;
+		}
+	}
+}

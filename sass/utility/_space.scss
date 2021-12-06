@@ -1,0 +1,13 @@
+@use "../global" as g;
+@include g.sp {
+	.u-space--content {
+		margin-bottom: 8%;
+	}
+}
+@include g.tab {
+	.u-space--content {
+		margin-right: 6%;
+	}
+}
+@include g.pc {
+}

@@ -1,0 +1,7 @@
+@use "../global" as g;
+
+.c-bg-gray {
+	background-color: g.$bgc-gray;
+	margin: 0;
+	padding: 5vw;
+}

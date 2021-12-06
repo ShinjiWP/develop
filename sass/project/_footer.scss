@@ -1,0 +1,23 @@
+@use "../global" as g;
+
+.p-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../../image/png/footer.png);
+
+	&__box {
+		margin-bottom: 20px;
+	}
+
+	&__info {
+		font-size: 20px;
+		color: #fff;
+		display: inline-block;
+	}
+	&__cr {
+		font-size: 14px;
+		color: #fff;
+	}
+}
