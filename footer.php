@@ -6,8 +6,8 @@
   <small class="c-text p-footer__cr">&copy; RaiseTech</small>
 </footer>
 </div>
-<script src="../javascript/jquery-3.6.0.min.js"></script>
-<script src="../javascript/js-slide.js"></script>
+<!-- <script src="../javascript/jquery-3.6.0.min.js"></script>
+<script src="../javascript/js-slide.js"></script> -->
 <?php wp_footer();?>
 </body>
 

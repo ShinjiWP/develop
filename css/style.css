@@ -737,7 +737,7 @@ dl, dd {
   }
 }
 
-.p-search {
+.search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,37 +748,7 @@ dl, dd {
   width: fit-content;
   position: relative;
 }
-@media screen and (min-width: 600px) {
-  .p-search::before {
-    font-size: 2.5vw;
-    margin-top: -1.25vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 38px;
-    font-size: 16px;
-  }
-  .p-search::before {
-    font-size: 1vw;
-    margin-top: -0.5vw;
-  }
-}
-.p-search__btn {
-  width: 18vw;
-  margin: 0 10px;
-}
-@media screen and (min-width: 1080px) {
-  .p-search__btn {
-    width: 7vw;
-    border-radius: 9px;
-    margin-right: 30px;
-  }
-}
-.p-search::before {
+.search-form::before {
   display: block;
   font-family: "Font Awesome 5 Free";
   content: "";
@@ -789,6 +759,63 @@ dl, dd {
   top: 50%;
   font-size: 20px;
   margin-top: -10px;
+}
+@media screen and (min-width: 600px) {
+  .search-form::before {
+    font-size: 2.5vw;
+    margin-top: -1.25vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 38px;
+    font-size: 16px;
+  }
+  .search-form::before {
+    font-size: 1vw;
+    margin-top: -0.5vw;
+  }
+}
+
+#searchform label {
+  display: none;
+}
+
+.search-field {
+  width: 50vw;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  padding-left: 28px;
+  height: 100%;
+}
+@media screen and (min-width: 1080px) {
+  .search-field {
+    width: 20vw;
+    border-radius: 9px;
+    padding-left: 22px;
+  }
+}
+
+.search-submit {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-weight: 700;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0ebe7), to(#dfd9d4));
+  background: linear-gradient(#f0ebe7, #dfd9d4);
+  border: 1px solid #707070;
+  width: 18vw;
+  margin: 0 10px;
+}
+@media screen and (min-width: 1080px) {
+  .search-submit {
+    width: 7vw;
+    border-radius: 9px;
+    margin-right: 30px;
+  }
 }
 
 .p-mainvisual--image--sp {
@@ -1245,7 +1272,7 @@ dl, dd {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../image/png/footer.png);
+  background: url(../image/png/footer.png);
 }
 .p-footer__box {
   margin-bottom: 20px;

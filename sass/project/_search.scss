@@ -1,11 +1,24 @@
 @use "../global" as g;
 
-.p-search {
+.search-form {
 	display: flex;
 	height: 35px;
 	margin: auto;
 	width: fit-content;
 	position: relative;
+
+	&::before {
+		display: block;
+		font-family: "Font Awesome 5 Free";
+		content: "\f002";
+		font-weight: 700;
+		color: g.$font-gray;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		font-size: 20px;
+		margin-top: -10px;
+	}
 
 	@include g.tab {
 		&::before {
@@ -23,27 +36,37 @@
 			margin-top: -0.5vw;
 		}
 	}
+}
+#searchform label {
+	display: none;
+}
 
-	&__btn {
-		width: 18vw;
-		margin: 0 10px;
-		@include g.pc {
-			width: 7vw;
-			border-radius: 9px;
-			margin-right: 30px;
-		}
+.search-field {
+	width: 50vw;
+	border-radius: 10px;
+	border: 1px solid g.$font-gray;
+	padding-left: 28px;
+	height: 100%;
+
+	@include g.pc {
+		width: 20vw;
+		border-radius: 9px;
+		padding-left: 22px;
 	}
+}
 
-	&::before {
-		display: block;
-		font-family: "Font Awesome 5 Free";
-		content: "\f002";
-		font-weight: 700;
-		color: g.$font-gray;
-		position: absolute;
-		left: 10px;
-		top: 50%;
-		font-size: 20px;
-		margin-top: -10px;
+.search-submit {
+	font-family: g.$Roboto;
+	color: g.$font-gray;
+	font-weight: 700;
+	border-radius: 10px;
+	background: linear-gradient(g.$bgc-btn-start, g.$bgc-btn-finish);
+	border: 1px solid g.$font-gray;
+	width: 18vw;
+	margin: 0 10px;
+	@include g.pc {
+		width: 7vw;
+		border-radius: 9px;
+		margin-right: 30px;
 	}
 }
