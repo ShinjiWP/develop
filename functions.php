@@ -4,6 +4,11 @@ add_theme_support('menus');
 add_theme_support('title-tag');
 add_theme_support( 'html5', array( 'search-form' ) );
 
+//メニュー位置管理（テーマの位置）
+register_nav_menu( 'header-nav', ' ヘッダーナビゲーション ' );
+register_nav_menu( 'footer-nav', ' フッターナビゲーション ' );
+register_nav_menu( 'side-nav', 'サイドナビゲーション');
+
 //タイトル出力
 function  develop_title($title){
   if (is_front_page() && is_home()){

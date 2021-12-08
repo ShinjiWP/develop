@@ -1,9 +1,22 @@
-<aside class="c-grid--sidebar p-grid--sidebar">
+<nav class="c-grid--sidebar p-grid--sidebar">
   <div class="c-shadow p-sidebar--shadow"></div>
   <div class="l-sidebar p-sidebar">
     <span class="p-sidebar__esc"></span>
     <h2 class="c-text p-sidebar__heading--main">Menu</h2>
-    <h3 class="c-text p-sidebar__heading--secondary">バーガー</h3>
+
+    <?php wp_nav_menu( array(
+    'menu'            => 'Side-Menu',
+	  'menu_class'      => 'p-sidebar__menu',
+    'menu_id' => ' ',
+	  // 'container'       => 'nav',
+	  // 'container_class' => 'c-grid--sidebar p-grid--sidebar',
+	  'depth'           => '2',
+	  'theme_location'  => 'side-nav',
+	 ) ); ?>
+
+
+
+    <!-- <h3 class="c-text p-sidebar__heading--secondary">バーガー</h3>
     <ul class="p-sidebar__menu">
       <li class="c-text p-sidebar__menu__item">ハンバーガー</li>
       <li class="c-text p-sidebar__menu__item">チーズバーガー</li>
@@ -28,6 +41,6 @@
       <li class="c-text p-sidebar__menu__item">アップル</li>
       <li class="c-text p-sidebar__menu__item">紅茶（Ice ＆Hot）</li>
       <li class="c-text p-sidebar__menu__item">コーヒー（Ice ＆Hot）</li>
-    </ul>
+    </ul> -->
   </div>
-</aside>
+</nav>
