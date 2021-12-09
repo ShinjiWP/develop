@@ -2,9 +2,12 @@
 <figure class="c-grid--mainvisual">
   <div class="p-grid--mainvisual">
     <div class="p-mainvisual--image">
-      <img class="c-image p-mainvisual--image--sp" src="/image/png/top-image-single-sp.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--tab" src="/image/png/top-image-single-tab.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--pc" src="/image/png/top-image-single-pc.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-single-sp.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-single-tab.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-single-pc.png" alt="ダミーサイト" />
     </div>
     <div class="p-mainvisual--inner">
       <h2 class="c-text p-mainvisual--ttl">チーズバーガー</h2>
@@ -36,33 +39,45 @@
   </article>
   <figure class="p-single">
     <div class="p-single--mainvisual">
-      <img class="c-image" src="../image/png/main-visual-single-pc.png" alt="" />
+      <img class="c-image" src="<?php echo get_theme_file_uri();?>/image/png/main-visual-single-pc.png" alt="" />
     </div>
     <figure class="p-single--description">
-      <img class="c-image p-single__figure" src="../image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__figure" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
       <figcaption class="c-text p-single__figcaption">
         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
       </figcaption>
     </figure>
     <figure class="p-single--description u-flex">
-      <img class="c-image p-single__figure" src="../image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__figure" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
       <figcaption class="c-text p-single__figcaption">
         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
       </figcaption>
     </figure>
     <div class="p-single--top-image">
-      <img class="c-image p-single__image" src="../image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__image" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
     </div>
     <div class="p-single--items">
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
-      <img class="c-image p-single__item" src="../image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
+      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
+        alt="" />
     </div>
   </figure>
   <div class="p-single--list p-single--list-decimal">

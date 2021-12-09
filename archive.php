@@ -3,9 +3,12 @@
 <figure class="c-grid--mainvisual">
   <div class="p-grid--mainvisual">
     <div class="p-mainvisual--image">
-      <img class="c-image p-mainvisual--image--sp" src="/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--tab" src="/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--pc" src="/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Menu:</h2>
@@ -24,9 +27,12 @@
   </article>
   <div class="p-archive--card">
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -41,9 +47,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -58,9 +67,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>

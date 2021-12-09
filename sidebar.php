@@ -10,7 +10,7 @@
     'menu_id' => ' ',
 	  'container'       => 'false',
 	  // 'container_class' => 'c-grid--sidebar p-grid--sidebar',
-	  'depth'           => '2',
+	  'depth'           => '0',
 	  'theme_location'  => 'side-nav',
     'items_wrap' => '%3$s',
     // 'walker'  => new custom_walker_side_menu ,

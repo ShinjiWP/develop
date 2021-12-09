@@ -17,7 +17,7 @@ Template Name: shopinfo
         src="<?php echo get_theme_file_uri();?>/image/png/top-image-page-pc.png" alt="ダミーサイト" />
     </div>
     <div class="p-mainvisual--inner">
-      <h2 class="c-text p-mainvisual--ttl">チーズバーガー</h2>
+      <h2 class="c-text p-mainvisual--ttl">ショップについて</h2>
     </div>
   </div>
 </figure>
