@@ -8,10 +8,12 @@
     'menu'            => 'Side-Menu',
 	  'menu_class'      => 'p-sidebar__menu',
     'menu_id' => ' ',
-	  // 'container'       => 'nav',
+	  'container'       => 'false',
 	  // 'container_class' => 'c-grid--sidebar p-grid--sidebar',
 	  'depth'           => '2',
 	  'theme_location'  => 'side-nav',
+    'items_wrap' => '%3$s',
+    // 'walker'  => new custom_walker_side_menu ,
 	 ) ); ?>
 
 
