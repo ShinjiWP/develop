@@ -12,7 +12,7 @@
 	  // 'container_class' => 'c-grid--sidebar p-grid--sidebar',
 	  'depth'           => '0',
 	  'theme_location'  => 'side-nav',
-    'items_wrap' => '%3$s',
+    // 'items_wrap' => '<ul>%3$s</ul>',
     // 'walker'  => new custom_walker_side_menu ,
 	 ) ); ?>
 

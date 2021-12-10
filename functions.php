@@ -29,6 +29,30 @@ function add_files(){
 
 
 
+
+//wp_nav_menuのidとclass名を削除//wp_nav_menuのidとclass名を削除
+// クラス名を削除
+function remove_nav_class($class) {
+    return $class = array();
+}
+
+add_filter("nav_menu_css_class", "remove_nav_class");
+
+// id名を削除
+function remove_nav_id($id) {
+    return $id = array();
+}
+
+add_filter("nav_menu_item_id", "remove_nav_id");
+
+
+
+
+
+
+
+
+
 // class custom_walker_side_menu extends Walker_Nav_Menu {
  
 //     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {

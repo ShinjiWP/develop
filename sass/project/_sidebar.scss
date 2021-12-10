@@ -49,7 +49,7 @@
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
 
-	&__menu {
+	ul {
 		position: relative;
 		padding: 10% 5%;
 		z-index: 100;
@@ -59,8 +59,19 @@
 		@include g.pc {
 			padding: 5% 2.5%;
 		}
+		li > a {
+			color: g.$font-gray;
+			font-size: g.$sp-sidebar-secondary;
 
-		&__item {
+			@include g.tab {
+				font-size: g.$tab-sidebar-secondary;
+			}
+			@include g.pc {
+				font-size: g.$pc-sidebar-secondary;
+			}
+		}
+
+		li > ul > li {
 			color: g.$font-gray;
 			margin: 10% 0;
 			font-size: g.$sp-sidebar-item;
@@ -72,6 +83,17 @@
 			@include g.pc {
 				margin: 12% 2%;
 				font-size: g.$pc-sidebar-item;
+			}
+			a {
+				color: g.$font-gray;
+				font-size: g.$sp-sidebar-item;
+
+				@include g.tab {
+					font-size: g.$tab-sidebar-item;
+				}
+				@include g.pc {
+					font-size: g.$pc-sidebar-item;
+				}
 			}
 		}
 	}
@@ -88,17 +110,17 @@
 				font-size: g.$pc-sidebar-main;
 			}
 		}
-		&--secondary {
-			color: g.$font-gray;
-			font-size: g.$sp-sidebar-secondary;
+		// &--secondary {
+		// 	color: g.$font-gray;
+		// 	font-size: g.$sp-sidebar-secondary;
 
-			@include g.tab {
-				font-size: g.$tab-sidebar-secondary;
-			}
-			@include g.pc {
-				font-size: g.$pc-sidebar-secondary;
-			}
-		}
+		// 	@include g.tab {
+		// 		font-size: g.$tab-sidebar-secondary;
+		// 	}
+		// 	@include g.pc {
+		// 		font-size: g.$pc-sidebar-secondary;
+		// 	}
+		// }
 	}
 
 	@include g.pc {

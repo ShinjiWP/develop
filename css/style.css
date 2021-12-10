@@ -1073,35 +1073,63 @@ a {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
-.p-sidebar__menu {
+.p-sidebar ul {
   position: relative;
   padding: 10% 5%;
   z-index: 100;
 }
 @media screen and (min-width: 600px) {
-  .p-sidebar__menu {
+  .p-sidebar ul {
     padding: 5% 2.5%;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-sidebar__menu {
+  .p-sidebar ul {
     padding: 5% 2.5%;
   }
 }
-.p-sidebar__menu__item {
+.p-sidebar ul li > a {
+  color: #707070;
+  font-size: 5vw;
+}
+@media screen and (min-width: 600px) {
+  .p-sidebar ul li > a {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-sidebar ul li > a {
+    font-size: 1.4vw;
+  }
+}
+.p-sidebar ul li > ul > li {
   color: #707070;
   margin: 10% 0;
   font-size: 4vw;
 }
 @media screen and (min-width: 600px) {
-  .p-sidebar__menu__item {
+  .p-sidebar ul li > ul > li {
     margin: 5% 0;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-sidebar__menu__item {
+  .p-sidebar ul li > ul > li {
     margin: 12% 2%;
+    font-size: 1vw;
+  }
+}
+.p-sidebar ul li > ul > li a {
+  color: #707070;
+  font-size: 4vw;
+}
+@media screen and (min-width: 600px) {
+  .p-sidebar ul li > ul > li a {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-sidebar ul li > ul > li a {
     font-size: 1vw;
   }
 }
@@ -1115,20 +1143,6 @@ a {
     visibility: visible;
     margin: 15% 0 30% 0;
     font-size: 2vw;
-  }
-}
-.p-sidebar__heading--secondary {
-  color: #707070;
-  font-size: 5vw;
-}
-@media screen and (min-width: 600px) {
-  .p-sidebar__heading--secondary {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-sidebar__heading--secondary {
-    font-size: 1.4vw;
   }
 }
 @media screen and (min-width: 1080px) {
