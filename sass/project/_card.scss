@@ -1,6 +1,13 @@
 @use "../global" as g;
 
 .p-card {
+	img {
+		width: 100%;
+		@include g.tab {
+			width: 50%;
+		}
+	}
+
 	margin: 20px 0;
 	@include g.tab {
 		display: flex;
@@ -96,14 +103,14 @@
 			font-size: g.$sp-card-text;
 
 			@include g.tab {
-				height: 14vw;
+				height: 13vw;
 				margin-bottom: 3vw;
 				font-size: g.$tab-card-text;
 			}
 			@include g.pc {
-        height: 5vw;
+				height: 6vw;
 				font-size: g.$pc-card-text;
-        line-height: 1.8;
+				line-height: 1.8;
 			}
 		}
 	}
@@ -130,7 +137,7 @@
 			height: 5vw;
 		}
 		@include g.pc {
-      width:15vw;
+			width: 15vw;
 			height: 4vw;
 		}
 	}

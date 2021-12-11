@@ -1321,6 +1321,14 @@ a {
 .p-card {
   margin: 20px 0;
 }
+.p-card img {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .p-card img {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 600px) {
   .p-card {
     display: -webkit-box;
@@ -1434,14 +1442,14 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__text {
-    height: 14vw;
+    height: 13vw;
     margin-bottom: 3vw;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__text {
-    height: 5vw;
+    height: 6vw;
     font-size: 1vw;
     line-height: 1.8;
   }
