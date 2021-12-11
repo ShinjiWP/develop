@@ -1,5 +1,8 @@
 <?php get_header();?>
-
+<?php
+    if( have_posts() ) :
+        while( have_posts() ) :
+            the_post(); ?>
 <figure class="c-grid--mainvisual">
   <div class="p-grid--mainvisual">
     <div class="p-mainvisual--image">
@@ -55,23 +58,13 @@
     </div>
   </article>
 </main>
-
+<?php endwhile;
+    else :
+        ?><p>表示する記事がありません</p><?php
+    endif;
+?>
 <?php get_sidebar();?>
 
-<section class=" c-grid--access">
-  <div class="p-grid--access">
-    <img class="c-image p-access__map--sp" src="<?php echo get_theme_file_uri();?>/image/png/map1.png" alt="アクセスマップ" />
-    <img class="c-image p-access__map--tab" src="<?php echo get_theme_file_uri();?>/image/png/map2.png" alt="アクセスマップ" />
-    <img class="c-image p-access__map--pc" src="<?php echo get_theme_file_uri();?>/image/png/map3.png" alt="アクセスマップ" />
-    <div class="c-background p-access__background">
-      <dl class="p-access__inner">
-        <dt class="c-text p-access__inner__ttl">見出しが入ります</dt>
-        <dd class="c-text p-access__inner__text">
-          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        </dd>
-      </dl>
-    </div>
-  </div>
-</section>
+<?php get_template_part('includes/access');?>
 
 <?php get_footer();?>

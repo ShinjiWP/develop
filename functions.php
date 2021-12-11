@@ -1,7 +1,8 @@
 <?php
-//テーマサポート
+//テーマサポート=管理画面で操作できる項目を増やせる
 add_theme_support('menus');
 add_theme_support('title-tag');
+add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5', array( 'search-form' ) );
 
 //メニュー位置管理（テーマの位置）
@@ -46,6 +47,13 @@ function remove_nav_id($id) {
 add_filter("nav_menu_item_id", "remove_nav_id");
 
 
+//画像のサイズ指定を削除する
+add_filter( 'post_thumbnail_html', 'custom_attribute' );
+function custom_attribute( $html ){
+    // width height を削除する
+    $html = preg_replace('/(width|height)="\d*"\s/', '', $html);
+    return $html;
+}
 
 
 
