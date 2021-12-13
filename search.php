@@ -2,30 +2,33 @@
 <figure class="c-grid--mainvisual">
   <div class="p-grid--mainvisual">
     <div class="p-mainvisual--image">
-      <img class="c-image p-mainvisual--image--sp" src="/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--tab" src="/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--pc" src="/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
+      <img class="c-image p-mainvisual--image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Search:</h2>
-      <h3 class="c-text p-mainvisual--text u-margin--text">チーズバーガー</h3>
+      <h3 class="c-text p-mainvisual--text u-margin--text"><?php the_title();?></h3>
     </div>
   </div>
 </figure>
 <main class="c-grid--archive p-archive">
   <article class="p-archive--intro">
     <div class="c-intro p-archive">
-      <h2 class="c-text p-archive__heading">小見出しが入ります</h2>
-      <p class="c-text p-archive__description">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
+      <?php the_content();?>
     </div>
   </article>
   <div class="p-archive--card">
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -40,9 +43,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -57,9 +63,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -74,9 +83,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>
@@ -91,9 +103,12 @@
       </div>
     </figure>
     <figure class="p-card">
-      <img class="c-image p-card__image--sp" src="../image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab" src="../image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc" src="../image/png/card-visual-archive-pc.png" alt="バーガー" />
+      <img class="c-image p-card__image--sp"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
+      <img class="c-image p-card__image--tab"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
+      <img class="c-image p-card__image--pc"
+        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" />
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">チーズバーガー</dd>

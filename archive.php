@@ -18,7 +18,7 @@ Template Name: archive
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Menu:</h2>
-      <h3 class="c-text p-mainvisual--text u-margin--text">まだまだ</h3>
+      <h3 class="c-text p-mainvisual--text u-margin--text">ここがわからん</h3>
     </div>
   </div>
 </figure>

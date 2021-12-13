@@ -1488,34 +1488,34 @@ a {
   }
 }
 
-.p-archive__heading {
+.p-archive > h3 {
   font-size: 6vw;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 600px) {
-  .p-archive__heading {
+  .p-archive > h3 {
     font-size: 4vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-archive__heading {
+  .p-archive > h3 {
     font-size: 2vw;
     margin-bottom: 25px;
   }
 }
-.p-archive__description {
+.p-archive > p {
   height: 50vw;
   overflow: hidden;
   font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
-  .p-archive__description {
+  .p-archive > p {
     height: 14vw;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-archive__description {
+  .p-archive > p {
     height: 4vw;
     font-size: 1vw;
     margin-bottom: 70px;

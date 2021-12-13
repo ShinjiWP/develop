@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .p-archive {
-	&__heading {
+	>h3 {
 		font-size: g.$sp-archive-ttl;
 		margin-bottom: 30px;
 		@include g.tab {
@@ -12,7 +12,7 @@
       margin-bottom: 25px;
 		}
 	}
-	&__description {
+	>p {
 		height: 50vw;
 		overflow: hidden;
 		font-size: g.$sp-archive-text;
