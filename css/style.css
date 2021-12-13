@@ -1436,20 +1436,20 @@ a {
   }
 }
 .p-card__box__text {
-  height: 20vw;
+  height: 24vw;
   overflow: hidden;
   font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
   .p-card__box__text {
-    height: 13vw;
+    height: 14vw;
     margin-bottom: 3vw;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__text {
-    height: 6vw;
+    height: 8vw;
     font-size: 1vw;
     line-height: 1.8;
   }
@@ -1620,11 +1620,9 @@ a {
     left: 13vw;
   }
 }
-@media screen and (min-width: 600px) and (min-width: 1080px) {
+@media screen and (min-width: 600px) and (min-width: 600px) {
   .p-pager--page::before, .p-pager--page::after {
-    top: -36%;
-    left: 8vw;
-    font-size: 1.8vw;
+    display: none;
   }
 }
 @media screen and (min-width: 600px) {
@@ -1650,6 +1648,44 @@ a {
 @media screen and (min-width: 600px) and (min-width: 1080px) {
   .p-pager--number {
     font-size: 1vw;
+  }
+}
+
+.wp-pagenavi {
+  padding: 0 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5vw;
+}
+@media screen and (min-width: 1080px) {
+  .wp-pagenavi {
+    padding: 0 25%;
+    margin-bottom: 1vw;
+  }
+}
+
+.pages {
+  margin-right: 3vw;
+}
+
+@media screen and (min-width: 600px) {
+  .page, .current {
+    padding: 1vw 1.5vw;
+    border: 1px solid;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1080px) {
+  .page, .current {
+    padding: 0.5vw 0.8vw;
+    margin: 0 1vw;
   }
 }
 

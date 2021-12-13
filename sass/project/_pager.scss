@@ -62,10 +62,8 @@
 				font-size: g.$tab-pager-icon;
 				top: -25%;
 				left: 13vw;
-				@include g.pc {
-          top: -36%;
-					left: 8vw;
-					font-size: g.$pc-pager-icon;
+				@include g.tab {
+          display: none;
 				}
 			}
 			&::after {
@@ -88,4 +86,33 @@
 			}
 		}
 	}
+}
+
+.wp-pagenavi{
+		padding: 0 16vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5vw;
+	@include g.pc {
+		padding: 0 25%;
+		margin-bottom: 1vw;
+	}
+}
+.pages{
+	margin-right: 3vw;
+}
+.page{
+	@include g.tab {
+    padding: 1vw 1.5vw;
+    border: 1px solid;
+    text-decoration: none;
+    @include g.pc {
+      padding: 0.5vw 0.8vw;
+			margin: 0 1vw;
+    }
+	}
+}
+.current{
+	@extend .page
 }

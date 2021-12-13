@@ -111,21 +111,6 @@
 </main>
 <?php get_sidebar();?>
 <div class="c-grid--pager">
-  <ul class="p-pager">
-    <li class="p-pager--page">
-      <ahref=""> page 1/10</ahref=>
-    </li>
-    <li><a class="p-pager--previous" href="">前へ</a></li>
-    <li><a class="c-page p-pager--number" href="">1</a></li>
-    <li><a class="c-page p-pager--number" href="">2</a></li>
-    <li><a class="c-page p-pager--number" href="">3</a></li>
-    <li><a class="c-page p-pager--number" href="">4</a></li>
-    <li><a class="c-page p-pager--number" href="">5</a></li>
-    <li><a class="c-page p-pager--number" href="">6</a></li>
-    <li><a class="c-page p-pager--number" href="">7</a></li>
-    <li><a class="c-page p-pager--number" href="">8</a></li>
-    <li><a class="c-page p-pager--number" href="">9</a></li>
-    <li><a class="p-pager--next" href="">次へ</a></li>
-  </ul>
+  <?php wp_pagenavi(); ?>
 </div>
 <?php get_footer();?>

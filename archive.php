@@ -18,7 +18,7 @@ Template Name: archive
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Menu:</h2>
-      <h3 class="c-text p-mainvisual--text u-margin--text">チーズバーガー</h3>
+      <h3 class="c-text p-mainvisual--text u-margin--text">まだまだ</h3>
     </div>
   </div>
 </figure>
@@ -43,14 +43,14 @@ Template Name: archive
         src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
       <img class="c-image p-card__image--pc"
         src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" /> -->
+      <?php the_post_thumbnail('thumbnail') ;?>
 
-      <?php the_post_thumbnail('thumbnail',) ;?>
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">
             <?php the_title();?>
           </dd>
-          <dl class="c-title p-card__box__subtitle">小見出しが入ります</dl>
+          <!-- <dl class="c-title p-card__box__subtitle">小見出しが入ります</dl> -->
           <dt class="c-text p-card__box__text">
             <?php the_content();?>
           </dt>
@@ -72,7 +72,8 @@ Template Name: archive
 <?php get_sidebar();?>
 
 <div class="c-grid--pager">
-  <ul class="p-pager">
+  <?php wp_pagenavi(); ?>
+  <!-- <ul class="p-pager">
     <li class="p-pager--page">
       <ahref=""> page 1/10</ahref=>
     </li>
@@ -87,6 +88,6 @@ Template Name: archive
     <li><a class="c-page p-pager--number" href="">8</a></li>
     <li><a class="c-page p-pager--number" href="">9</a></li>
     <li><a class="p-pager--next" href="">次へ</a></li>
-  </ul>
+  </ul> -->
 </div>
 <?php get_footer();?>
