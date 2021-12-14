@@ -1322,6 +1322,7 @@ a {
   margin: 20px 0;
 }
 .p-card img {
+  vertical-align: bottom;
   width: 100%;
 }
 @media screen and (min-width: 600px) {
@@ -1510,13 +1511,13 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-archive > p {
-    height: 14vw;
+    height: 11vw;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-archive > p {
-    height: 4vw;
+    height: 5vw;
     font-size: 1vw;
     margin-bottom: 70px;
   }
@@ -1656,36 +1657,64 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 5vw;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 600px) {
   .wp-pagenavi {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 25%;
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
+  }
+}
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  font-size: 6vw;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+    font-size: 3vw;
+  }
+}
+.pages {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .pages {
+    display: block;
+    margin-right: 3vw;
   }
 }
 
-.pages {
-  margin-right: 3vw;
+.page, .current {
+  display: none;
 }
-
 @media screen and (min-width: 600px) {
   .page, .current {
+    display: block;
     padding: 1vw 1.5vw;
     border: 1px solid;
     text-decoration: none;
+    margin: 0 1vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1080px) {
   .page, .current {
     padding: 0.5vw 0.8vw;
-    margin: 0 1vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .current {
+    display: block;
+    background-color: #3c2b1c;
+    color: white;
   }
 }
 

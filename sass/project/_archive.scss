@@ -17,11 +17,11 @@
 		overflow: hidden;
 		font-size: g.$sp-archive-text;
 		@include g.tab {
-			height: 14vw;
+			height: 11vw;
 			font-size: g.$tab-archive-text;
 		}
 		@include g.pc {
-			height: 4vw;
+			height: 5vw;
 			font-size: g.$pc-archive-text;
       margin-bottom: 70px;
 		}

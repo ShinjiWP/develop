@@ -18,17 +18,17 @@ Template Name: archive
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Menu:</h2>
-      <h3 class="c-text p-mainvisual--text u-margin--text">ここがわからん</h3>
+      <h3 class="c-text p-mainvisual--text u-margin--text"><?php single_term_title(); ?></h3>
     </div>
   </div>
 </figure>
 <main class="c-grid--archive p-archive">
   <article class="p-archive--intro">
     <div class="c-intro p-archive">
-      <h2 class="c-text p-archive__heading">小見出しが入ります</h2>
-      <p class="c-text p-archive__description">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
+      <h2 class="c-text p-archive__heading"><?php single_term_title(); ?>の詳細ですー</h2>
+      <!-- <p class="c-text p-archive__description"> -->
+      <?php echo category_description(); ?>
+      <!-- </p> -->
     </div>
   </article>
   <div class="p-archive--card">

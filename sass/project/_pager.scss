@@ -63,7 +63,7 @@
 				top: -25%;
 				left: 13vw;
 				@include g.tab {
-          display: none;
+					display: none;
 				}
 			}
 			&::after {
@@ -88,31 +88,54 @@
 	}
 }
 
-.wp-pagenavi{
-		padding: 0 16vw;
+.wp-pagenavi {
+	padding: 0 16vw;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: space-between;
 	margin-bottom: 5vw;
-	@include g.pc {
-		padding: 0 25%;
-		margin-bottom: 1vw;
-	}
-}
-.pages{
-	margin-right: 3vw;
-}
-.page{
 	@include g.tab {
-    padding: 1vw 1.5vw;
-    border: 1px solid;
-    text-decoration: none;
-    @include g.pc {
-      padding: 0.5vw 0.8vw;
-			margin: 0 1vw;
-    }
+		justify-content: center;
+		padding: 0 25%;
+		margin-bottom: 3vw;
+	}
+	.previouspostslink {
+		font-size: 6vw;
+		@include g.tab {
+			font-size: 3vw;
+		}
+	}
+	.nextpostslink {
+		@extend .previouspostslink;
 	}
 }
-.current{
-	@extend .page
+.pages {
+	display: none;
+
+	@include g.tab {
+		display: block;
+		margin-right: 3vw;
+	}
+}
+.page {
+	display: none;
+	@include g.tab {
+		display: block;
+		padding: 1vw 1.5vw;
+		border: 1px solid;
+		text-decoration: none;
+		margin: 0 1vw;
+
+		@include g.pc {
+			padding: 0.5vw 0.8vw;
+		}
+	}
+}
+.current {
+	@extend .page;
+	@include g.tab {
+		display: block;
+		background-color: g.$bgc-pager;
+		color: white;
+	}
 }

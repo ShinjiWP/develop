@@ -2,6 +2,7 @@
 
 .p-card {
 	img {
+		vertical-align: bottom;
 		width: 100%;
 		@include g.tab {
 			width: 50%;
