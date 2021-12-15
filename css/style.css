@@ -771,13 +771,13 @@ a {
   position: absolute;
   left: 10px;
   top: 50%;
-  font-size: 20px;
-  margin-top: -10px;
+  font-size: 18px;
+  margin-top: -9px;
 }
 @media screen and (min-width: 600px) {
   .search-form::before {
-    font-size: 2.5vw;
-    margin-top: -1.25vw;
+    font-size: 2vw;
+    margin-top: -1vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -804,6 +804,11 @@ a {
   border: 1px solid #707070;
   padding-left: 28px;
   height: 100%;
+}
+@media screen and (min-width: 600px) {
+  .search-field {
+    padding-left: 38px;
+  }
 }
 @media screen and (min-width: 1080px) {
   .search-field {
@@ -1489,17 +1494,17 @@ a {
   }
 }
 
-.p-archive > h3 {
+.p-archive > h2 {
   font-size: 6vw;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 600px) {
-  .p-archive > h3 {
+  .p-archive > h2 {
     font-size: 4vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-archive > h3 {
+  .p-archive > h2 {
     font-size: 2vw;
     margin-bottom: 25px;
   }

@@ -1,23 +1,12 @@
 <?php get_header();?>
-<?php
+
+<?php get_template_part('includes/mainvisual');?>
+
+
+<?php 
     if( have_posts() ) :
         while( have_posts() ) :
             the_post(); ?>
-<figure class="c-grid--mainvisual">
-  <div class="p-grid--mainvisual">
-    <div class="p-mainvisual--image">
-      <img class="c-image p-mainvisual--image--sp"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-front-sp.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--tab"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-front-tab.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--pc"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-front-pc.png" alt="ダミーサイト" />
-    </div>
-    <div class="p-mainvisual--inner">
-      <h2 class="c-title p-mainvisual--ttl">ダミーサイト</h2>
-    </div>
-  </div>
-</figure>
 <main class="c-grid--contents">
   <article class="p-grid--article u-space--content">
     <img class="c-image p-content__image" src="<?php echo get_theme_file_uri();?>/image/png/main-visual-1_sp.png"

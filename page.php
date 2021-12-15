@@ -6,21 +6,9 @@ Template Name: shopinfo
 
 <?php get_header();?>
 
-<figure class="c-grid--mainvisual">
-  <div class="p-grid--mainvisual">
-    <div class="p-mainvisual--image">
-      <img class="c-image p-mainvisual--image--sp"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-page-sp.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--tab"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-page-tab.png" alt="ダミーサイト" />
-      <img class="c-image p-mainvisual--image--pc"
-        src="<?php echo get_theme_file_uri();?>/image/png/top-image-page-pc.png" alt="ダミーサイト" />
-    </div>
-    <div class="p-mainvisual--inner">
-      <h2 class="c-text p-mainvisual--ttl">ショップについて</h2>
-    </div>
-  </div>
-</figure>
+<?php get_template_part('includes/mainvisual');?>
+
+
 <main class="c-grid--main p-article">
   <article class="p-article--intro">
     <div class="c-intro p-archive">

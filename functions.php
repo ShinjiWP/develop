@@ -26,6 +26,7 @@ function add_files(){
   wp_enqueue_style('style',get_theme_file_uri().'/style.css',array());
   wp_enqueue_style('main-style',get_theme_file_uri().'/css/style.css',array());
   wp_enqueue_script('main-script',get_theme_file_uri().'/javascript/js-slide.js',array('jquery'),'1.0.0',true);
+  // wp_enqueue_script('footer-script',get_theme_file_uri().'/javascript/footerFixed.js',array('jquery'),'1.0.0',true);
 } add_action ('wp_enqueue_scripts','add_files');
 
 

@@ -1,4 +1,4 @@
-<footer class="c-grid--footer p-footer">
+<footer id="footer" class=" c-grid--footer p-footer">
   <div class="p-footer__box">
     <h3 class="c-text p-footer__info u-margin--footer u-border"><a href="<?php echo get_page_link(64);?>">ショップ情報</a>
     </h3>
