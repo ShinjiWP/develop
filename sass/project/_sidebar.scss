@@ -48,7 +48,9 @@
 	&__esc::after {
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
-
+	>a{
+		font-size: 0;
+	}
 	ul {
 		position: relative;
 		padding: 10% 5%;

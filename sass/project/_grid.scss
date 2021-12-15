@@ -60,6 +60,7 @@
 	display: grid;
 	grid-template: "sidebar" auto/auto;
 	position: relative;
+	min-height: calc(100vh - 150px);
 }
 
 .c-shadow {
