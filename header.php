@@ -17,7 +17,7 @@
   <?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
   <div class="c-grid">
     <header class="c-grid--header">
       <div class="p-grid-header p-header">
