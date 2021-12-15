@@ -104,7 +104,7 @@
 			font-size: g.$sp-card-text;
 
 			@include g.tab {
-				height: 14vw;
+				height: 13vw;
 				margin-bottom: 3vw;
 				font-size: g.$tab-card-text;
 			}
@@ -116,6 +116,7 @@
 		}
 	}
 	&--btn {
+		position: relative;
 		margin: auto;
 		font-size: g.$sp-card-btn;
 
@@ -141,5 +142,16 @@
 			width: 15vw;
 			height: 4vw;
 		}
+		>a{
+			color:g.$font-gray;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 15vw;
+			height: 4vw;
+			border-radius: 25px;
+			line-height: 4vw;
+
+		};
 	}
 }

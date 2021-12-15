@@ -40,7 +40,7 @@ Template Name: archive
           </dt>
         </figcaption>
         <div class="p-card--btn">
-          <button class="c-btn p-card__btn">詳しく見る</button>
+          <button class="c-btn p-card__btn"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
         </div>
       </div>
     </figure>

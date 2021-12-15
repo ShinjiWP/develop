@@ -1448,7 +1448,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__text {
-    height: 14vw;
+    height: 13vw;
     margin-bottom: 3vw;
     font-size: 2vw;
   }
@@ -1461,6 +1461,7 @@ a {
   }
 }
 .p-card--btn {
+  position: relative;
   margin: auto;
   font-size: 3.5vw;
 }
@@ -1493,6 +1494,16 @@ a {
     height: 4vw;
   }
 }
+.p-card__btn > a {
+  color: #707070;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 25px;
+  line-height: 4vw;
+}
 
 .p-archive > h2 {
   font-size: 6vw;
@@ -1522,7 +1533,7 @@ a {
 }
 @media screen and (min-width: 1080px) {
   .p-archive > p {
-    height: 5vw;
+    height: 6vw;
     font-size: 1vw;
     margin-bottom: 70px;
   }
