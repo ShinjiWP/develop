@@ -3,7 +3,6 @@
   <div class="l-sidebar p-sidebar">
     <span class="p-sidebar__esc"></span>
     <h2 class="c-text p-sidebar__heading--main">Menu</h2>
-
     <?php wp_nav_menu( array(
       'menu'            => 'Side-Menu',
       'menu_class'      => 'p-sidebar__menu',
@@ -12,6 +11,5 @@
       'depth'           => '0',
       'theme_location'  => 'side-nav',
     ) ); ?>
-
   </div>
 </nav>

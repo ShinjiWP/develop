@@ -1698,6 +1698,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 5vw;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .wp-pagenavi {
@@ -1706,17 +1707,34 @@ a {
             justify-content: center;
     padding: 0 25%;
     margin-bottom: 3vw;
+    position: static;
   }
 }
-.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+.wp-pagenavi .previouspostslink {
   color: #3c2b1c;
   font-size: 6vw;
+  position: absolute;
+  left: 40px;
 }
 @media screen and (min-width: 600px) {
-  .wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  .wp-pagenavi .previouspostslink {
     font-size: 3vw;
+    position: static;
   }
 }
+.wp-pagenavi .nextpostslink {
+  color: #3c2b1c;
+  font-size: 6vw;
+  position: absolute;
+  right: 40px;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .nextpostslink {
+    font-size: 3vw;
+    position: static;
+  }
+}
+
 .pages {
   display: none;
 }

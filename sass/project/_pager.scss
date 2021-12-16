@@ -94,20 +94,32 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 5vw;
+	position: relative;
 	@include g.tab {
 		justify-content: center;
 		padding: 0 25%;
 		margin-bottom: 3vw;
+		position: static;
 	}
 	.previouspostslink {
 		color: g.$bgc-pager;
 		font-size: 6vw;
+		position: absolute;
+		left: 40px;
 		@include g.tab {
 			font-size: 3vw;
+			position: static;
 		}
 	}
 	.nextpostslink {
-		@extend .previouspostslink;
+		color: g.$bgc-pager;
+		font-size: 6vw;
+		position: absolute;
+		right: 40px;
+		@include g.tab {
+			font-size: 3vw;
+			position: static;
+		}
 	}
 }
 .pages {
