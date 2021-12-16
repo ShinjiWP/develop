@@ -100,6 +100,7 @@
 		margin-bottom: 3vw;
 	}
 	.previouspostslink {
+		color: g.$bgc-pager;
 		font-size: 6vw;
 		@include g.tab {
 			font-size: 3vw;
@@ -125,6 +126,7 @@
 		border: 1px solid;
 		text-decoration: none;
 		margin: 0 1vw;
+		color: g.$bgc-pager;
 
 		@include g.pc {
 			padding: 0.5vw 0.8vw;

@@ -678,7 +678,7 @@ a {
   display: grid;
   grid-template: "sidebar" auto/auto;
   position: relative;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 50px);
 }
 
 .c-shadow {
@@ -1503,10 +1503,24 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15vw;
-  height: 4vw;
   border-radius: 25px;
-  line-height: 4vw;
+  width: 34vw;
+  height: 10vw;
+  line-height: 10vw;
+}
+@media screen and (min-width: 600px) {
+  .p-card__btn > a {
+    width: 20vw;
+    height: 5vw;
+    line-height: 5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-card__btn > a {
+    width: 15vw;
+    height: 4vw;
+    line-height: 4vw;
+  }
 }
 
 .p-archive > h2 {
@@ -1695,6 +1709,7 @@ a {
   }
 }
 .wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  color: #3c2b1c;
   font-size: 6vw;
 }
 @media screen and (min-width: 600px) {
@@ -1722,6 +1737,7 @@ a {
     border: 1px solid;
     text-decoration: none;
     margin: 0 1vw;
+    color: #3c2b1c;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1080px) {
