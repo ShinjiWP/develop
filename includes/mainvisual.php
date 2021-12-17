@@ -10,4 +10,6 @@
 } elseif ( is_archive()) {
   get_template_part('includes/mainvisual-archive');
     // アーカイブページ
+}elseif ( is_search()) {
+  get_template_part('includes/mainvisual-search');
 };?>
