@@ -6,12 +6,12 @@
   <meta charset="utf-8" />
   <meta name="description" content="RaiseTechハンバーガーサイトの模写になります。" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+  <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="img.ico" href="../img/favicon.ico" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link href="//use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
   <script src="../javascript/jquery-3.6.0.min.js"></script>
   <script src="../javascript/js-slide.js"></script>
   <?php wp_head();?>

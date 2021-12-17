@@ -1551,7 +1551,7 @@ a {
 }
 @media screen and (min-width: 1080px) {
   .p-archive > p {
-    height: 6vw;
+    height: 7vw;
     font-size: 1vw;
     margin-bottom: 70px;
   }

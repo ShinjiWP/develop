@@ -1,8 +1,11 @@
 <section class=" c-grid--access">
   <div class="p-grid--access">
-    <img class="c-image p-access__map--sp" src="<?php echo get_theme_file_uri();?>/image/png/map1.png" alt="アクセスマップ" />
-    <img class="c-image p-access__map--tab" src="<?php echo get_theme_file_uri();?>/image/png/map2.png" alt="アクセスマップ" />
-    <img class="c-image p-access__map--pc" src="<?php echo get_theme_file_uri();?>/image/png/map3.png" alt="アクセスマップ" />
+    <img class="c-image p-access__map--sp" src="<?php echo esc_url(get_theme_file_uri());?>/image/png/map1.png"
+      alt="アクセスマップ" />
+    <img class="c-image p-access__map--tab" src="<?php echo esc_url(get_theme_file_uri());?>/image/png/map2.png"
+      alt="アクセスマップ" />
+    <img class="c-image p-access__map--pc" src="<?php echo esc_url(get_theme_file_uri());?>/image/png/map3.png"
+      alt="アクセスマップ" />
     <div class="c-background p-access__background">
       <dl class="p-access__inner">
         <dt class="c-text p-access__inner__ttl">見出しが入ります</dt>
