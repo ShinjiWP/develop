@@ -14,12 +14,7 @@
         while( have_posts() ) :
             the_post(); ?>
     <figure class="p-card">
-      <!-- <img class="c-image p-card__image--sp"
-        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-sp.png" alt="バーガー" />
-      <img class="c-image p-card__image--tab"
-        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-tab.png" alt="バーガー" />
-      <img class="c-image p-card__image--pc"
-        src="<?php echo get_theme_file_uri();?>/image/png/card-visual-archive-pc.png" alt="バーガー" /> -->
+
       <?php the_post_thumbnail('thumbnail') ;?>
 
       <div class="c-background p-card__caption">

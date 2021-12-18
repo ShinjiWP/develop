@@ -2,11 +2,11 @@
   <div class="p-grid--mainvisual">
     <div class="p-mainvisual--image">
       <img class="c-image p-mainvisual--image--sp"
-        src="<?php echo esc_url(get_theme_file_uri());?>/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/top-image-archive-sp.png" alt="ダミーサイト" />
       <img class="c-image p-mainvisual--image--tab"
-        src="<?php echo esc_url(get_theme_file_uri());?>/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/top-image-archive-tab.png" alt="ダミーサイト" />
       <img class="c-image p-mainvisual--image--pc"
-        src="<?php echo esc_url(get_theme_file_uri());?>/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/top-image-archive-pc.png" alt="ダミーサイト" />
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Search:</h2>

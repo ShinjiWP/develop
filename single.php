@@ -23,45 +23,46 @@
   </article>
   <figure class="p-single">
     <div class="p-single--mainvisual">
-      <img class="c-image" src="<?php echo get_theme_file_uri();?>/image/png/main-visual-single-pc.png" alt="" />
+      <img class="c-image" src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/main-visual-single-pc.png"
+        alt="" />
     </div>
     <figure class="p-single--description">
-      <img class="c-image p-single__figure" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
+      <img class="c-image p-single__figure"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
       <figcaption class="c-text p-single__figcaption">
         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
       </figcaption>
     </figure>
     <figure class="p-single--description u-flex">
-      <img class="c-image p-single__figure" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
+      <img class="c-image p-single__figure"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
       <figcaption class="c-text p-single__figcaption">
         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
       </figcaption>
     </figure>
     <div class="p-single--top-image">
-      <img class="c-image p-single__image" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
+      <img class="c-image p-single__image"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
     </div>
     <div class="p-single--items">
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
-      <img class="c-image p-single__item" src="<?php echo get_theme_file_uri();?>/image/png/card-visual-single.png"
-        alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
+      <img class="c-image p-single__item"
+        src="<?php echo esc_attr(get_theme_file_uri());?>/image/png/card-visual-single.png" alt="" />
     </div>
   </figure>
   <div class="p-single--list p-single--list-decimal">
