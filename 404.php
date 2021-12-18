@@ -13,13 +13,13 @@ get_header();
 ?>
 
 <header class="page-header alignwide">
-  <h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?>。以下のリンクへお進みください。</h1>
+  <h1 class="page-title"><?php echo esc_html( 'このようなことの無い様に善処します。'); ?></h1>
 </header><!-- .page-header -->
 
 <div class="error-404 not-found default-max-width">
   <div class="page-content">
     <p>
-      <a href="">作成中</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">こちらへお進みください</a>
 
     </p>
   </div><!-- .page-content -->
