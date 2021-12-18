@@ -20,7 +20,6 @@ get_header();
   <div class="page-content">
     <p>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">こちらへお進みください</a>
-
     </p>
   </div><!-- .page-content -->
 </div><!-- .error-404 -->

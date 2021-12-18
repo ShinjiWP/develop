@@ -9,7 +9,7 @@ Template Name: archive
 <main class="c-grid--archive p-archive">
   <article class="p-archive--intro">
     <div class="c-intro p-archive">
-      <h2 class="c-text p-archive__heading"><?php single_term_title(); ?>の詳細ですー</h2>
+      <h2 class="c-text p-archive__heading"><?php echo esc_html( single_term_title()); ?>の詳細ですー</h2>
       <!-- <p class="c-text p-archive__description"> -->
       <?php echo category_description(); ?>
       <!-- </p> -->
