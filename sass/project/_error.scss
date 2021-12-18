@@ -1,0 +1,30 @@
+@use '../global'as g;
+
+.p-error {
+	margin-top: 20px;
+	.page-title {
+		font-size: g.$sp-archive-ttl;
+		margin-bottom: 30px;
+		@include g.tab {
+			font-size: g.$tab-archive-ttl;
+		}
+		@include g.pc {
+			font-size: g.$pc-archive-ttl;
+			margin-bottom: 25px;
+		}
+	}
+	> p {
+		height: 50vw;
+		overflow: hidden;
+		font-size: g.$sp-archive-text;
+		@include g.tab {
+			height: 11vw;
+			font-size: g.$tab-archive-text;
+		}
+		@include g.pc {
+			height: 7vw;
+			font-size: g.$pc-archive-text;
+			margin-bottom: 70px;
+		}
+	}
+}

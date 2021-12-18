@@ -15,12 +15,15 @@
 
 <?php endwhile;
     else :
-        ?><p>表示する記事がありません</p><?php
+      ?><p>表示する記事がありません</p><?php
     endif;
-?>
+    ?>
 
 <?php get_sidebar();?>
 
 <?php get_template_part('includes/access');?>
 
 <?php get_footer();?>
+
+
+<?php get_template_part('includes/footer');?>

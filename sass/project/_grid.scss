@@ -18,7 +18,11 @@
 .p-grid--article {
 	display: grid;
 	grid-template: "article" auto/auto;
+	@include g.tab {
+		width: 50%;
+	}
 }
+
 
 .p-content__image {
 	grid-area: article;
@@ -59,8 +63,7 @@
 .p-grid--sidebar {
 	display: grid;
 	grid-template: "sidebar" auto/auto;
-	position: relative;
-	min-height: calc(100vh - 50px);
+	min-height: 1400px;
 }
 
 .c-shadow {

@@ -12,17 +12,14 @@
 get_header();
 ?>
 
-<header class="page-header alignwide">
+<header class="p-error">
   <h1 class="page-title"><?php echo esc_html( 'このようなことの無い様に善処します。'); ?></h1>
+  <p>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">こちらへお進みください</a>
+  </p>
 </header><!-- .page-header -->
 
-<div class="error-404 not-found default-max-width">
-  <div class="page-content">
-    <p>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">こちらへお進みください</a>
-    </p>
-  </div><!-- .page-content -->
-</div><!-- .error-404 -->
+
 <?php get_sidebar();?>
 <?php
 get_footer();

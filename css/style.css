@@ -467,7 +467,7 @@ a {
 .c-grid {
   overflow-x: hidden;
   display: grid;
-  grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "page    sidebar" auto "footer   sidebar" 150px/100% 100%;
+  grid-template: "header" 217px "figure  " auto "main   " auto "access " auto "page   " auto "footer  " 150px/100% 100%;
 }
 @media screen and (min-width: 1080px) {
   .c-grid {
@@ -579,8 +579,9 @@ a {
   display: none;
   width: 100%;
   height: 100%;
-  position: relative;
-  left: -100%;
+  position: absolute;
+  left: 0%;
+  top: 0;
   z-index: 10;
 }
 
@@ -611,6 +612,11 @@ a {
   text-decoration: underline;
 }
 
+.c-fixed {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .c-heading {
   display: block;
   margin: 6vw 0;
@@ -634,6 +640,11 @@ a {
 .p-grid--article {
   display: grid;
   grid-template: "article" auto/auto;
+}
+@media screen and (min-width: 600px) {
+  .p-grid--article {
+    width: 50%;
+  }
 }
 
 .p-content__image {
@@ -677,8 +688,7 @@ a {
 .p-grid--sidebar {
   display: grid;
   grid-template: "sidebar" auto/auto;
-  position: relative;
-  min-height: calc(100vh - 50px);
+  min-height: 1400px;
 }
 
 .c-shadow {
@@ -1034,8 +1044,10 @@ a {
   height: 100%;
   padding: 20% 15%;
   position: absolute;
-  right: 0%;
+  right: -100%;
   z-index: 200;
+  overflow-y: auto;
+  top: 0;
 }
 @media screen and (min-width: 600px) {
   .p-sidebar {
@@ -1045,6 +1057,7 @@ a {
 }
 @media screen and (min-width: 1080px) {
   .p-sidebar {
+    position: static;
     width: 100%;
     padding: 10%;
   }
@@ -1982,6 +1995,43 @@ a {
 @media screen and (min-width: 1080px) {
   .p-code__box {
     font-size: 1vw;
+  }
+}
+
+.p-error {
+  margin-top: 20px;
+}
+.p-error .page-title {
+  font-size: 6vw;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .p-error .page-title {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-error .page-title {
+    font-size: 2vw;
+    margin-bottom: 25px;
+  }
+}
+.p-error > p {
+  height: 50vw;
+  overflow: hidden;
+  font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-error > p {
+    height: 11vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-error > p {
+    height: 7vw;
+    font-size: 1vw;
+    margin-bottom: 70px;
   }
 }
 
