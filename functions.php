@@ -48,7 +48,7 @@ function remove_nav_id($id) {
 add_filter("nav_menu_item_id", "remove_nav_id");
 
 
-//画像のサイズ指定を削除する
+// 画像のサイズ指定を削除する
 add_filter( 'post_thumbnail_html', 'custom_attribute' );
 function custom_attribute( $html ){
     // width height を削除する
@@ -57,7 +57,7 @@ function custom_attribute( $html ){
 }
 
 
-
+add_filter( 'wp_img_tag_add_width_and_height_attr', '__return_false' );
 
 
 

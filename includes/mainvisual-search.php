@@ -10,7 +10,7 @@
     </div>
     <div class="p-mainvisual--inner p-archive--inner">
       <h2 class="c-text p-mainvisual--ttl">Search:</h2>
-      <h3 class="c-text p-mainvisual--text u-margin--text"><?php the_title();?></h3>
+      <h3 class="c-text p-mainvisual--text u-margin--text"><?php echo get_search_query(); ?></h3>
     </div>
   </div>
 </figure>

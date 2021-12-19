@@ -1351,61 +1351,23 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 600px) {
-  .p-card img {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 600px) {
   .p-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
-.p-card__image--sp {
-  display: block;
+.p-card__image {
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
-  .p-card__image--sp {
-    display: none;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-card__image--sp {
-    display: none;
-  }
-}
-.p-card__image--tab {
-  display: none;
-}
-@media screen and (min-width: 600px) {
-  .p-card__image--tab {
-    display: block;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-card__image--tab {
-    display: none;
-  }
-}
-.p-card__image--pc {
-  display: none;
-}
-@media screen and (min-width: 600px) {
-  .p-card__image--pc {
-    display: none;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-card__image--pc {
-    display: block;
+  .p-card__image {
     width: 50%;
   }
 }
 .p-card__caption {
   padding: 10% 5% 2%;
-  height: 80vw;
+  height: 55vw;
   background-color: #3c2b1c;
   color: #fff;
   display: -webkit-box;
@@ -1422,20 +1384,13 @@ a {
 @media screen and (min-width: 600px) {
   .p-card__caption {
     width: 50%;
-    padding: 5%;
-    height: 40.5vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-card__caption {
-    padding: 4%;
-    height: 25.5vw;
+    padding: 3% 4% 1%;
+    height: auto;
   }
 }
 .p-card__box__ttl {
   font-weight: 700;
   font-size: 4.5vw;
-  margin-bottom: 24px;
 }
 @media screen and (min-width: 600px) {
   .p-card__box__ttl {
@@ -1454,7 +1409,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__subtitle {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1469,8 +1424,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__text {
-    height: 13vw;
-    margin-bottom: 3vw;
+    height: 10vw;
     font-size: 2vw;
   }
 }
@@ -1493,7 +1447,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card--btn {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1551,7 +1505,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-archive > h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -2016,7 +1970,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-error .page-title {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 @media screen and (min-width: 1080px) {

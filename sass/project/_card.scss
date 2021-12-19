@@ -4,9 +4,6 @@
 	img {
 		vertical-align: bottom;
 		width: 100%;
-		@include g.tab {
-			width: 50%;
-		}
 	}
 
 	margin: 20px 0;
@@ -17,45 +14,15 @@
 	}
 
 	&__image {
-		&--sp {
-			display: block;
-
-			@include g.tab {
-				display: none;
-			}
-			@include g.pc {
-				display: none;
-			}
-		}
-
-		&--tab {
-			display: none;
-
-			@include g.tab {
-				display: block;
-				width: 50%;
-			}
-			@include g.pc {
-				display: none;
-			}
-		}
-
-		&--pc {
-			display: none;
-
-			@include g.tab {
-				display: none;
-			}
-			@include g.pc {
-				display: block;
-				width: 50%;
-			}
+		width: 100%;
+		@include g.tab {
+			width: 50%;
 		}
 	}
 
 	&__caption {
 		padding: 10% 5% 2%;
-		height: 80vw;
+		height: 55vw;
 		background-color: g.$bgc-card;
 		color: g.$font-white;
 		display: flex;
@@ -63,20 +30,16 @@
 		justify-content: space-between;
 		@include g.tab {
 			width: 50%;
-			padding: 5%;
-			height: 40.5vw;
+			padding: 3% 4% 1%;
+			height: auto;
 		}
-		@include g.pc {
-			padding: 4%;
-			height: 25.5vw;
-		}
+		
 	}
 
 	&__box {
 		&__ttl {
 			font-weight: 700;
 			font-size: g.$sp-card-ttl;
-			margin-bottom: 24px;
 
 			@include g.tab {
 				font-size: g.$tab-card-ttl;
@@ -105,8 +68,7 @@
 			font-size: g.$sp-card-text;
 
 			@include g.tab {
-				height: 13vw;
-				margin-bottom: 3vw;
+				height: 10vw;
 				font-size: g.$tab-card-text;
 			}
 			@include g.pc {
@@ -114,7 +76,7 @@
 				font-size: g.$pc-card-text;
 				line-height: 1.8;
 			}
-			>h3{
+			> h3 {
 				overflow: hidden;
 				text-overflow: ellipsis;
 				white-space: nowrap;
