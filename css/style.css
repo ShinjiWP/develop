@@ -1422,6 +1422,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card__caption {
+    width: 50%;
     padding: 5%;
     height: 40.5vw;
   }
@@ -1480,6 +1481,11 @@ a {
     font-size: 1vw;
     line-height: 1.8;
   }
+}
+.p-card__box__text > h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .p-card--btn {
   position: relative;
