@@ -692,7 +692,6 @@ a {
 .p-grid--sidebar {
   display: grid;
   grid-template: "sidebar" auto/auto;
-  min-height: 1400px;
 }
 
 .c-shadow {
@@ -913,11 +912,11 @@ a {
   }
 }
 .p-mainvisual--ttl {
-  font-size: 8vw;
+  font-size: 6vw;
 }
 @media screen and (min-width: 600px) {
   .p-mainvisual--ttl {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 }
 @media screen and (min-width: 1080px) {
