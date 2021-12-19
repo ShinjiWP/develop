@@ -45,3 +45,4 @@
   <?php wp_pagenavi(); ?>
 </div>
 <?php get_footer();?>
+<?php get_template_part('includes/footer');?>
