@@ -21,9 +21,9 @@ Template Name: archive
         while( have_posts() ) :
             the_post(); ?>
     <figure class="p-card">
-
-      <?php the_post_thumbnail('thumbnail') ;?>
-
+      <div class="c-image p-card__image">
+        <?php the_post_thumbnail('thumbnail') ;?>
+      </div>
       <div class="c-background p-card__caption">
         <figcaption class="p-card__box">
           <dd class="c-title p-card__box__ttl">
