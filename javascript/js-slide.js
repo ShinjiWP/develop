@@ -1,4 +1,3 @@
-
 const mediaQuery = window.matchMedia("(max-width: 1079px)");
 
 // ページが読み込まれた時に実行
@@ -13,21 +12,21 @@ function handle(mm) {
 		jQuery(".js-slidebar").on("click", function () {
 			jQuery(".c-shadow").fadeIn(500);
 			jQuery(".p-sidebar").css({ right: "0%", transition: "0.5s" });
-			jQuery("body").css({ height: "100%", 'overflow-y': "hidden" });
+			jQuery("body").css({ height: "100%", "overflow-y": "hidden" });
+			jQuery(".c-grid").css({ position: "static" });
 		});
 	} else {
 		// それ以外の処理
 		jQuery(".c-shadow").fadeOut(00);
 		jQuery(".p-sidebar").css({ right: "-100%" });
-		
 	}
 	jQuery(".p-sidebar__esc").on("click", function () {
 		jQuery(".c-shadow").fadeOut(500);
-        jQuery(".p-sidebar").css({ right: "-100%", transition: "0.5s" });
-        jQuery("body").css({ height: "100%", 'overflow-y': "visible" });
+		jQuery(".p-sidebar").css({ right: "-100%", transition: "0.5s" });
+		jQuery("body").css({ height: "100%", "overflow-y": "visible" });
+		jQuery(".c-grid").css({ position: "relative" });
 	});
 }
-
 
 // jQuery(function () {
 // 	if (window.matchMedia("(max-width:599.9px)").matches) {
@@ -74,7 +73,6 @@ function handle(mm) {
 // 		jQuery(".p-sidebar").css("left", "100%");
 // 	});
 // });
-
 
 // function handle(mm) {
 // 	if (mm.matches) {

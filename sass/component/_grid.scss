@@ -3,6 +3,7 @@
 .c-grid {
 	overflow: hidden;
 	display: grid;
+	position: relative;
 	grid-template:
 		"header" 217px
 		"figure  " auto
