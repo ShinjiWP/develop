@@ -11,9 +11,11 @@ function handle(mm) {
 		// ウィンドウサイズ768px以下のときの処理
 		jQuery(".js-slidebar").on("click", function () {
 			jQuery(".c-shadow").fadeIn(500);
-			jQuery(".p-sidebar").css({ right: "0%", transition: "0.5s" });
-			jQuery("body").css({ height: "100%", "overflow-y": "hidden" });
-			jQuery(".c-grid").css({ position: "static" });
+			jQuery(".c-shadow").css({ "min-height": "calc(var(--vh,1vh)*100)", position: "fixed" });
+			jQuery(".p-sidebar").css({ right: "0%", transition: "0.5s", "min-height": "calc(var(--vh,1vh)*100)" });
+			jQuery("body").css({ height: "100%", "overflow-y": "hidden", "min-height": "calc(var(--vh,1vh)*100)" });
+			jQuery(".c-grid").css({ position: "static", "min-height": "calc(var(--vh,1vh)*100)" });
+			// jQuery("html").css({ "min-height": "calc(var(--vh,1vh)*100)" });
 		});
 	} else {
 		// それ以外の処理
@@ -27,7 +29,17 @@ function handle(mm) {
 		jQuery(".c-grid").css({ position: "relative" });
 	});
 }
+// 1.関数の定義
+function setHeight() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
 
+// 2.初期化
+setHeight();
+
+// 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
+window.addEventListener("resize", setHeight);
 // jQuery(function () {
 // 	if (window.matchMedia("(max-width:599.9px)").matches) {
 // 		jQuery(".p-header__box").on("click", function () {
