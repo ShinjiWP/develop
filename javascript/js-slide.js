@@ -11,22 +11,28 @@ function handle(mm) {
 		// ウィンドウサイズ768px以下のときの処理
 		jQuery(".js-slidebar").on("click", function () {
 			jQuery(".c-shadow").fadeIn(500);
-			jQuery(".c-shadow").css({ "min-height": "calc(var(--vh,1vh)*100)", position: "fixed" });
-			jQuery(".p-sidebar").css({ right: "0%", transition: "0.5s", "min-height": "calc(var(--vh,1vh)*100)" });
+			jQuery(".c-shadow").css({ height: "calc(var(--vh,1vh)*100)", position: "fixed" });
+			jQuery(".p-sidebar").css({ right: "0%", transition: "0.5s", height: "calc(var(--vh,1vh)*100)" });
 			jQuery("body").css({ height: "100%", "overflow-y": "hidden", "min-height": "calc(var(--vh,1vh)*100)" });
-			jQuery(".c-grid").css({ position: "static", "min-height": "calc(var(--vh,1vh)*100)" });
-			// jQuery("html").css({ "min-height": "calc(var(--vh,1vh)*100)" });
+			jQuery(".c-grid").css({ position: "static", height: "calc(var(--vh,1vh)*100)" });
+			jQuery("html").css({ height: "calc(var(--vh,1vh)*100)" });
 		});
 	} else {
 		// それ以外の処理
 		jQuery(".c-shadow").fadeOut(00);
-		jQuery(".p-sidebar").css({ right: "-100%" });
+		jQuery(".p-sidebar").css({ right: "-100%", height: "100%" });
+		//12/24にこの４行追加した
+		jQuery("html").css({ height: "100% " });
+		jQuery("body").css({ height: "100%", "overflow-y": "auto" });
+		jQuery(".c-grid").css({ height: "auto" });
 	}
 	jQuery(".p-sidebar__esc").on("click", function () {
 		jQuery(".c-shadow").fadeOut(500);
-		jQuery(".p-sidebar").css({ right: "-100%", transition: "0.5s" });
+		jQuery(".c-shadow").css({ height: "" });
+		jQuery(".p-sidebar").css({ right: "-100%", transition: "0.5s", height: "" });
 		jQuery("body").css({ height: "100%", "overflow-y": "visible" });
-		jQuery(".c-grid").css({ position: "relative" });
+		jQuery(".c-grid").css({ position: "relative", height: "" });
+		jQuery("html").css({ height: "" });
 	});
 }
 // 1.関数の定義
@@ -40,6 +46,13 @@ setHeight();
 
 // 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
 window.addEventListener("resize", setHeight);
+
+// if (window.matchMedia("(min-width:1080px)").matches) {
+// 	jQuery("html").css({ height: " " });
+// 	jQuery("body").css({ height: "100%", "overflow-y": "auto", "min-height": " " });
+// 	jQuery(".c-grid").css({ height: " " });
+// }
+
 // jQuery(function () {
 // 	if (window.matchMedia("(max-width:599.9px)").matches) {
 // 		jQuery(".p-header__box").on("click", function () {

@@ -516,6 +516,8 @@ a {
 }
 .c-grid--sidebar {
   width: 100%;
+  min-height: 100vh;
+  min-height: calc(var(--vh,1vh)*100);
   background-color: #f2ede9;
 }
 @media screen and (min-width: 1080px) {
