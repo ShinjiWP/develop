@@ -1,3 +1,6 @@
+<?php if(isset($_GET['s']) && empty($_GET['s'])): ?>
+<?php get_template_part('includes/404');?>
+<?php else: ?>
 <?php get_header();?>
 
 <?php get_template_part('includes/mainvisual');?>
@@ -47,3 +50,4 @@
 </div>
 <?php get_footer();?>
 <?php get_template_part('includes/footer');?>
+<?php endif; ?>
