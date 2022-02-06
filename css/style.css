@@ -133,8 +133,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -319,8 +318,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -354,8 +352,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -434,8 +431,7 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -466,6 +462,8 @@ a {
 
 .c-grid {
   overflow: hidden;
+  max-width: 2000px;
+  margin: auto;
   display: grid;
   position: relative;
   grid-template: "header" 217px "figure  " auto "main   " auto "access " auto "page   " auto "footer  " 150px/100% 100%;
@@ -489,8 +487,6 @@ a {
 }
 @media screen and (min-width: 600px) {
   .c-grid--contents {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 8% 6%;
   }
@@ -517,7 +513,7 @@ a {
 .c-grid--sidebar {
   width: 100%;
   min-height: 100vh;
-  min-height: calc(var(--vh,1vh)*100);
+  min-height: calc(var(--vh, 1vh) * 100);
   background-color: #f2ede9;
 }
 @media screen and (min-width: 1080px) {
@@ -555,7 +551,6 @@ a {
   color: #707070;
   font-weight: 700;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f0ebe7), to(#dfd9d4));
   background: linear-gradient(#f0ebe7, #dfd9d4);
   border: 1px solid #707070;
 }
@@ -704,29 +699,17 @@ a {
 }
 
 .p-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   height: 100%;
   background-color: #fff7ef;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 @media screen and (min-width: 1080px) {
   .p-header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 .p-header__btn {
@@ -752,7 +735,7 @@ a {
 .p-header__heading {
   width: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: clamp(16px, (1rem + 5vw), 50px);
+  font-size: clamp(16px, 1rem + 5vw, 50px);
 }
 .p-header__heading a {
   color: #707070;
@@ -767,8 +750,6 @@ a {
 }
 
 .search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 35px;
   margin: auto;
@@ -780,7 +761,7 @@ a {
 .search-form::before {
   display: block;
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f002";
   font-weight: 700;
   color: #707070;
   position: absolute;
@@ -797,8 +778,6 @@ a {
 }
 @media screen and (min-width: 1080px) {
   .search-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 38px;
     font-size: 16px;
@@ -838,7 +817,6 @@ a {
   color: #707070;
   font-weight: 700;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f0ebe7), to(#dfd9d4));
   background: linear-gradient(#f0ebe7, #dfd9d4);
   border: 1px solid #707070;
   width: 18vw;
@@ -893,12 +871,8 @@ a {
 }
 .p-mainvisual--inner {
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
@@ -943,16 +917,9 @@ a {
   width: 100%;
 }
 .p-content__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .p-content__heading {
   padding: 5%;
@@ -1089,12 +1056,10 @@ a {
   background: #616161;
 }
 .p-sidebar__esc::before {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .p-sidebar__esc::after {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .p-sidebar > a {
   font-size: 0;
@@ -1313,19 +1278,10 @@ a {
 }
 
 .p-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: url(../image/png/footer.png);
 }
 .p-footer__box {
@@ -1353,8 +1309,6 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1371,16 +1325,9 @@ a {
   height: 55vw;
   background-color: #3c2b1c;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 600px) {
   .p-card__caption {
@@ -1534,40 +1481,22 @@ a {
   }
 }
 .p-archive--inner {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 600px) {
   .p-archive--inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 .p-pager {
   padding: 0 16vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 5vw;
 }
 @media screen and (min-width: 1080px) {
@@ -1590,7 +1519,7 @@ a {
 .p-pager--previous::before, .p-pager--next::before {
   display: block;
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f100";
   position: absolute;
   left: -80%;
   font-weight: 700;
@@ -1598,7 +1527,7 @@ a {
   top: -22%;
 }
 .p-pager--next::before {
-  content: "";
+  content: "\f101";
   left: 115%;
 }
 .p-pager--page {
@@ -1624,7 +1553,7 @@ a {
   .p-pager--page::before, .p-pager--page::after {
     display: block;
     font-family: "Font Awesome 5 Free";
-    content: "";
+    content: "\f100";
     position: absolute;
     font-weight: 700;
     font-size: 3vw;
@@ -1639,7 +1568,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-pager--page::after {
-    content: "";
+    content: "\f101";
     left: 70vw;
   }
 }
@@ -1665,23 +1594,15 @@ a {
 
 .wp-pagenavi {
   padding: 0 16vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 5vw;
   position: relative;
 }
 @media screen and (min-width: 600px) {
   .wp-pagenavi {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0 25%;
     margin-bottom: 3vw;
     position: static;
@@ -1785,12 +1706,8 @@ a {
   }
 }
 .p-single--description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0;
   padding-top: 5vw;
 }
@@ -1819,12 +1736,8 @@ a {
   }
 }
 .p-single--top-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 5vw 0;
 }
 .p-single__image {
@@ -1837,14 +1750,9 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-single--items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 30vw;
   }
 }
@@ -2000,10 +1908,7 @@ a {
 }
 
 .u-flex {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 599.9px) {

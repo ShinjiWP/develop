@@ -2,6 +2,8 @@
 
 .c-grid {
 	overflow: hidden;
+	max-width: 2000px;
+	margin: auto;
 	display: grid;
 	position: relative;
 	grid-template:
@@ -66,7 +68,7 @@
 	&--sidebar {
 		width: 100%;
 		min-height: 100vh;
-		min-height: calc(var(--vh,1vh)*100);
+		min-height: calc(var(--vh, 1vh) * 100);
 		background-color: g.$light-beige;
 		@include g.pc {
 			grid-area: sidebar;
